@@ -42,6 +42,10 @@ Changelog
   :class:`~cryptography.x509.CertificateBuilder`. These key types must be
   signed with a different signing algorithm as ``X25519`` and ``X448`` do
   not support signing.
+* We now ship ``universal2`` wheels on macOS, which contain both ``arm64``
+  and ``x86_64`` architectures. Users on macOS should upgrade to the latest
+  ``pip`` to ensure they can use this wheel, although we will continue to
+  ship ``x86_64`` specific wheels for now to ease the transition.
 
 .. _v35-0-0:
 
